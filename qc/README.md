@@ -1,25 +1,6 @@
 # QC Study
 These files are full of questions you are likely to be asked as part of QC. You should focus your QC studies on these, but know that you may get asked questions that you didn't see here. If you see something in these files that you don't think was covered in training, please let your trainer know. 
 
-## Monday QC - 5/16
- - [Java Threads](./java-advanced.md)
- - [Java Functional Programming](./java-advanced.md)
- - [Hibernate](./qc-hibernate.md)
- - [Spring](./qc-spring.md)
-
-
-## QC - Foundations Cumulative
- - [OOP](./oop.md)
- - [Java Basics](./java-basics.md)
- - [Java Intermediate - Advanced](./java-advanced.md)
- - [JavaScript](./qc-javascript.md)
- - [SQL](./qc-sql.md)
- - [Servlets](./qc-servlets.md)
- - [HTML](./qc-html.md)
- - [CSS](./qc-css.md)
- - [HTTP](./qc-http.md)
- - [REST](./qc-rest.md)
- - [AJAX](./qc-ajax.md)
 
 ### QC Questions
 You can focus your study here, but these are not exhaustive lists of all possible questions.
