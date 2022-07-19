@@ -1,3 +1,3 @@
 # Code Demos
 
- - [Hello World](/Hello%20World)
+ - [Hello World](./Hello%20World/)
