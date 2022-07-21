@@ -40,8 +40,9 @@ public class User {
         this.age = age;
     }
 
-    public static void setPopulation(int pop) {
-        population = pop;
+    //From this static method we can find out just how many User objects currently exist
+    public static int getPopulation() {
+        return population;
     }
 
     //Destructor, opposite of constructor, will be invoked right before the object is deleted from memory.
