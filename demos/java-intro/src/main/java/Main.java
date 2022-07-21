@@ -22,7 +22,7 @@ public class Main {
 
         /*
         Now that we have our object on the heap, and a reference to it, we can use the "." operator to "de-reference",
-        which just means follow that reference to where it points. If we follow our reference, iot leads to our object,
+        which just means follow that reference to where it points. If we follow our reference, it leads to our object,
         and we can invoke its data and behaviors.
          */
         referenceName.setFirstName("reference");
