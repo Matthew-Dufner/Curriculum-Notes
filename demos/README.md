@@ -18,7 +18,7 @@
  - Longest Common Prefix
    - [problem](https://leetcode.com/problems/longest-common-prefix/)
    - [solution]()
- -  Merge Sorted Lists
+ - Merge Sorted Lists
    - [problem](https://leetcode.com/problems/merge-two-sorted-lists/)
    - [solution]()
 
