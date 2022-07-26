@@ -1,8 +1,14 @@
 # Code Demos
 
  - [Hello World](./Hello%20World/)
- - [Java intro demo](./java-intro) - flow control, primitives, wrappers, boxxing, classes
- - [Java intro demo II](./java-intro-II) - modifiers, strings, pass-by-value, abstract classes
+ - [Java Intro Demo](./java-intro) - flow control, primitives, wrappers, boxxing, classes
+ - [Java Intro Demo II](./java-intro-II) - modifiers, strings, pass-by-value, abstract classes
+ - [Java Intro Demo III](./java-intro-III) - arrays, abstract classes, interfaces
+ - [Console Renderer](./console-renderer) - A simple console I/O solution to be replaced by better UI later
+ - [Exceptions Demo](./exceptions-demo) - exceptions, throwable, custom exceptions, try/catch/finally, try-with-resources
+ - [Maven Demo I](./maven-demo) - we set this one up as a dependency to be pulled into maven demo II
+ - [Maven Demo II](./maven-demo-2) - We had maven manage our dependency, pulling in the code from maven demo I
+ - [Singleton Design Pattern](./singleton)
 
 # Code Challenges
 ### Easy
