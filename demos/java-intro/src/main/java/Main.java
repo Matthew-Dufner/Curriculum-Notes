@@ -39,6 +39,9 @@ public class Main {
         User tommy = new User("Tommy", "Cavanagh", 23);
         User steven = new User("Steven", "Knox", 43);
 
+        //let's test the population of user objects based on that static variable in the User class
+        System.out.println("Current number of User objects: " + User.getPopulation());
+
         /*
         If I take the object which represents Luke, and change the values, it is still the same object.
         It might perfectly match the object that the kyle reference points to, but these are separate objects
@@ -259,6 +262,9 @@ public class Main {
         //here the return type from setAge is void, so no value returned here
         u.setAge(99);
 
+
+        //let's test the population of user objects based on that static variable in the User class
+        System.out.println("Current number of User objects: " + User.getPopulation());
 
         System.out.println("The program is complete.");
 

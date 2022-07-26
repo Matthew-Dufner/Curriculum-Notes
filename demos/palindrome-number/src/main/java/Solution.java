@@ -12,13 +12,13 @@ class Solution {
         }
 
         //We could also write this as the equivalent while loop:
-        //        int j = 0;
-        //        while(j < s.length() / 2) {
-        //            if(s.charAt(j) != s.charAt(s.length() - (j + 1))) {
-        //                return false;
-        //            }
-        //            j++;
-        //        }
+//                int j = 0;
+//                while(j < s.length() / 2) {
+//                    if(s.charAt(j) != s.charAt(s.length() - (j + 1))) {
+//                        return false;
+//                    }
+//                    j++;
+//                }
 
 
         return true;
