@@ -9,7 +9,7 @@
  - [Maven Demo I](./maven-demo) - we set this one up as a dependency to be pulled into maven demo II
  - [Maven Demo II](./maven-demo-2) - We had maven manage our dependency, pulling in the code from maven demo I
  - [Singleton Design Pattern](./singleton)
- - [Collections](/collections-demo) - Maps, queues, lists, and out custom array list
+ - [Collections](./collections-demo) - Maps, queues, lists, and out custom array list
 
 # Code Challenges
 ### Easy
