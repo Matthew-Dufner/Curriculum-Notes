@@ -9,9 +9,6 @@ public class CustomArrayList<E> implements CustomList<E> {
     Object[] array = new Object[size];
 
 
-
-
-
     @Override
     public void add(E e) {
         if(currentSize >= size) {
@@ -29,15 +26,26 @@ public class CustomArrayList<E> implements CustomList<E> {
     @Override
     public void remove(int index) {
         array[index] = null;
+        //need to shift everything after the index to the left
+
+
+        currentSize--;
     }
 
     @Override
     public void remove(E e) {
+        boolean complete = false;
         for(int i = 0; i < array.length; i++) {
-            if(array[i].equals(e)) {
+            if(complete) {
+                //we've already removed the element, now we need to shift.
+
+            } else if (array[i].equals(e)) {
+                complete = true;
                 remove(i);
             }
+
         }
+        currentSize--;
     }
 
     @Override

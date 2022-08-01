@@ -9,5 +9,8 @@
         <module name="collections-demo" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="collections-demo" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
