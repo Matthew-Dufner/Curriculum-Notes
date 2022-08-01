@@ -26,7 +26,7 @@
  - [One-To-One](./SQLone-to-one)
  - [One-To-Many](./SQL/one-to-many)
  - [Many-To-Many](./SQL/many-to-many)
- - [SQL Assignment(Lab)](./SQL/sql-assignment/sql-assignment.sql)
+ - [SQL Assignment(Lab)](./SQL/sql-assignment/sql-assignment(postgresql).sql)
 
 ## Spring
  - [Spring Boot core IoC, Data, and Web](./Spring/spring-boot-data-web.md)
