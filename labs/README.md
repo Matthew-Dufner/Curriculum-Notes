@@ -1,7 +1,6 @@
 # Labs
 
-## Spring
-[Spring Boot core IoC, Data, and Web](./Spring/spring-boot-data-web.md)
+
 
 ## Java Basics
  - [Building a Java Program](./Java/edit-compile-execute/README.md)
@@ -28,3 +27,6 @@
  - [One-To-Many](./SQL/one-to-many)
  - [Many-To-Many](./SQL/many-to-many)
  - [SQL Assignment(Lab)](./SQL/sql-assignment/sql-assignment.sql)
+
+## Spring
+ - [Spring Boot core IoC, Data, and Web](./Spring/spring-boot-data-web.md)
