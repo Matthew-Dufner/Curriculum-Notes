@@ -57,6 +57,7 @@ public class ConnectionManager {
             builder.append(username);
             builder.append("&password=");
             builder.append(password);
+            builder.append("&currentSchema=public");
 
 
             Class.forName(driver);
