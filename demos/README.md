@@ -10,6 +10,7 @@
  - [Maven Demo II](./maven-demo-2) - We had maven manage our dependency, pulling in the code from maven demo I
  - [Singleton Design Pattern](./singleton)
  - [Collections](./collections-demo) - Maps, queues, lists, and out custom array list
+ - [JDBC Demo](./jdbc-demo)
 
 # Code Challenges
 ### Easy
