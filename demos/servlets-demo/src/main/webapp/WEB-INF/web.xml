@@ -31,6 +31,24 @@
 
 
 
+    <servlet>
+        <servlet-name>errorHandler</servlet-name>
+        <servlet-class>servlets.ErrorHandler</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>errorHandler</servlet-name>
+        <url-pattern>/errorHandler</url-pattern>
+    </servlet-mapping>
+
+    <error-page>
+        <exception-type>java.lang.ArithmeticException</exception-type>
+        <location>/errorHandler</location>
+    </error-page>
+
+
+
+
 
 
 

@@ -29,5 +29,12 @@ public class PingServlet extends HttpServlet {
         resp.getWriter().print("Pong!");
     }
 
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
+        resp.setStatus(500);
+        resp.getWriter().println("exception caused");
+        //int i = 1 / 0;//cause error - can't do this? Obvious error causes method not allowed?
+        throw new ArithmeticException();
+    }
 }
