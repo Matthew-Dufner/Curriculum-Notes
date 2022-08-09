@@ -34,7 +34,6 @@ public class PingServlet extends HttpServlet {
 
         resp.setStatus(500);
         resp.getWriter().println("exception caused");
-        //int i = 1 / 0;//cause error - can't do this? Obvious error causes method not allowed?
         throw new ArithmeticException();
     }
 }
