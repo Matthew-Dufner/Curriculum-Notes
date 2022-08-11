@@ -6,11 +6,11 @@ A CSS consists of a *set of rules* that defines the styles for a web page. A CSS
 
 *Example:*
  ```CSS  
-    h3 { 
-        font-family: Arial; 
-        font-style: italic; 
-        color: red 
-        }
+h3 { 
+font-family: Arial; 
+font-style: italic; 
+color: red 
+}
 ```
 
 # CSS Box Model
