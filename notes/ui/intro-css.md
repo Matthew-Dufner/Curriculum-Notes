@@ -7,9 +7,9 @@ A CSS consists of a *set of rules* that defines the styles for a web page. A CSS
 *Example:*
  ```CSS  
 h3 { 
-font-family: Arial; 
-font-style: italic; 
-color: red 
+	font-family: Arial; 
+	font-style: italic; 
+	color: red 
 }
 ```
 
@@ -42,20 +42,17 @@ Inline CSS contains the CSS property in the body section attached with element i
 
 **Example:**
 ```HTML
-    <!DOCTYPE html> 
-    <html> 
-    <head> 
-        <title>Inline CSS</title> 
-    </head> 
-    <body> 
-        <p style = "color:#009900; 
-		   font-size:50px; 
-           font-style:italic; 
-           text-align:center;">
-			            Hello World
-	       </p> 
-    </body> 
-    </html>  
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<title>Inline CSS</title> 
+	</head> 
+	<body> 
+	<p style = "color:#009900; font-size:50px; font-style:italic; text-align:center;">
+		Hello World
+	</p> 
+	</body> 
+</html>  
 ```     
 ### Internal or Embedded CSS
 
