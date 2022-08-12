@@ -5,12 +5,12 @@ CSS stands for **Cascading Style Sheets** - it is a language for styling HTML do
 A CSS consists of a *set of rules* that defines the styles for a web page. A CSS style rule composed of **selectors** and **declarations**. The selector is an HTML Element *like h3 used in the below example*. The declaration is comprised of a property and a value surrounded by curly braces. In the below example font-family, font-style and color were properties of the selector h3. Arial, italic and red were the values assigned, respectively, to the properties.
 
 *Example:*
- ```  
-    h3 { 
-        font-family: Arial; 
-        font-style: italic; 
-        color: red 
-        }
+ ```CSS  
+h3 { 
+	font-family: Arial; 
+	font-style: italic; 
+	color: red 
+}
 ```
 
 # CSS Box Model
@@ -41,28 +41,25 @@ There are three types of CSS which are given below:
 Inline CSS contains the CSS property in the body section attached with element is known as inline CSS. This kind of style is specified within an **HTML tag using style attribute**. 
 
 **Example:**
-
-    <!DOCTYPE html> 
-    <html> 
-    <head> 
-        <title>Inline CSS</title> 
-    </head> 
-    <body> 
-        <p style = "color:#009900; 
-		   font-size:50px; 
-           font-style:italic; 
-           text-align:center;">
-			            Hello World
-	       </p> 
-    </body> 
-    </html>  
-     
+```HTML
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<title>Inline CSS</title> 
+	</head> 
+	<body> 
+	<p style = "color:#009900; font-size:50px; font-style:italic; text-align:center;">
+		Hello World
+	</p> 
+	</body> 
+</html>  
+```     
 ### Internal or Embedded CSS
 
 This can be used when a single HTML document must be styled  **uniquely**. The CSS rule set should be within the HTML file in the *head section* i.e the CSS is embedded within the HTML file.
 
 **Example:**
- ```  
+ ```HTML  
     <!DOCTYPE html> 
     <html> 
     <head> 
@@ -99,7 +96,7 @@ External CSS contains separate CSS file which contains only style property with 
  
 **Example:** The file given below contains CSS property. This file should be saved with an .css extension. For Ex: **style.css**
 
-```
+```HTML
     body {
 	    background-color:powderblue;
 	    }
@@ -119,7 +116,7 @@ External CSS contains separate CSS file which contains only style property with 
 
 Below, we have HTML file that makes use of the above created external style sheet (style.css). This can be achieved by using `<link>` tag. The `<link>` element has *rel* and *href* attributes. The *rel* specifices the relationship between the current document and the linked document. In this case, *rel* attribute value will be *stylesheet* because we going to add the external style sheet to the HTML document. The *href*  attribute is used to specify the location of the external style sheet file.
 
-```
+```HTML
     <html>
         <head> 
             <link rel="stylesheet" href="style.css"/> 
