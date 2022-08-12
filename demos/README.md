@@ -13,6 +13,10 @@
  - [JDBC Demo](./jdbc-demo)
 
 # Code Challenges
+### Revature Asessments
+ - [Sorting](./week-3-code-challenges)
+
+
 ### Easy
  - Palindrome Number
    - [problem](https://leetcode.com/problems/palindrome-number/)
