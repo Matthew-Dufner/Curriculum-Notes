@@ -27,7 +27,8 @@ public class NewUserMenu extends View{
 
         User newUser = new User(username, email, password);
         UserDAO dao = new UserDAO(ConnectionManager.getConnection());
-        dao.create(newUser);
+        //dao.create(newUser);
+        dao.testStoredProcedure(newUser);
 
         viewManager.navigate("MainMenu");
 

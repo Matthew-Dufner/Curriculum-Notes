@@ -21,7 +21,6 @@ public class MainMenu extends View{
 
         switch(input) {
             case "N":
-                System.out.println("Navigating...");
                 viewManager.navigate("NewUser");
                 break;
             case "U":
@@ -40,7 +39,6 @@ public class MainMenu extends View{
                 viewManager.quit();
                 break;
         }
-        System.out.println("Nav complete?");
 
     }
 }

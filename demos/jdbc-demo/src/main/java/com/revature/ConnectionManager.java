@@ -42,9 +42,10 @@ public class ConnectionManager {
             String host = props.getProperty("host");
             String port = props.getProperty("port");
             String dbname = props.getProperty("dbname");
-            String driver = props.getProperty("driver");
             String username = props.getProperty("username");
             String password = props.getProperty("password");
+            String schema = props.getProperty("schema");
+            String driver = props.getProperty("driver");
 
 
             StringBuilder builder = new StringBuilder("jdbc:postgresql://");
@@ -57,7 +58,8 @@ public class ConnectionManager {
             builder.append(username);
             builder.append("&password=");
             builder.append(password);
-            builder.append("&currentSchema=public");
+            builder.append("&currentSchema=");
+            builder.append(schema);
 
 
             Class.forName(driver);

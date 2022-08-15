@@ -1,8 +1,6 @@
 package com.revature;
 
 import com.revature.consoleui.*;
-import com.revature.daos.UserDAO;
-import com.revature.pojos.User;
 
 import java.sql.Connection;
 
@@ -24,12 +22,6 @@ public class Main {
         while(viewManager.isRunning()){
             viewManager.render();
         }
-
-
-
-
-
-
 
         //System.out.println("Done!");
     }

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index.html</title>
+</head>
+
+<body>
+    <h1>index.html</h1>
+    <button onclick="test()">Click here!</button>
+</body>
+
+<script>
+    function test() {
+        let a = "5";
+        let b = 5;
+
+
+        //This allows type coercion
+        if (a == b) {
+            console.log("a == b? yes!");
+        } else {
+            console.log("a == b? no");
+        }
+
+        //Strict equality checking doesn't allow type coercion
+        if (a === b) {
+            console.log("a === b? yes");
+        } else {
+            console.log("a === b? no");
+        }
+
+        if (typeof a == typeof b && a == b) {
+            console.log("a type checked == b? yes");
+        } else {
+            console.log("a type checked == b? no");
+        }
+
+
+
+        //Ternary Operator
+        let t = a == b ? true : false
+
+        //equivelant to:
+        let p;
+        if (a == b) {
+            p = true;
+        } else {
+            p = false;
+        }
+
+        //this doesn't work:
+        //a == b ? let q = 1 : let q = 2;
+        //This isn't a shortcut for an if/then statement, it's just similar
+
+
+        let num = 5;
+        console.log("num - ", typeof num);
+
+        let str = "string";
+        console.log("str - ", typeof str);
+
+        let bool = true;
+        console.log("bool - ", typeof bool);
+
+        let nil = null;
+        console.log("nil - ", typeof nil);
+
+        let undef;
+        console.log("undef - ", typeof undef);
+
+        let obj = {};
+        console.log("obj - ", typeof obj);
+
+        let arr = [1, "2"];
+        console.log("arr - ", arr);
+
+        let nan = NaN;
+        console.log("nan - ", nan);
+
+
+
+        //Objects:
+        let user = {
+            "firstName": "Kyle",
+            "lastName": "Plummer",
+            "age": 37
+        }
+
+        //use a , to separate things to be logged, it will come out better and easier to explore
+        console.log("user: ", user);
+        console.log("user: " + user);
+
+        console.log("firstName: ", user.firstName);
+        console.log("lastName: ", user["lastName"]);
+
+
+
+
+    }
+</script>
+
+
+</html>

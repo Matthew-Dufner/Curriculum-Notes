@@ -1,10 +1,8 @@
 package com.revature.daos;
 
 import com.revature.pojos.User;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+
+import java.sql.*;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -115,6 +113,22 @@ public class UserDAO implements DataSourceCRUD<User> {
         }
 
 
+    }
+
+    public void testStoredProcedure(User user) {
+        try {
+            String sql = "call insertUser(?,?,?)";
+            PreparedStatement cstmt = connection.prepareStatement(sql);
+
+            cstmt.setString(1, user.getUserName());
+            cstmt.setString(2, user.getEmail());
+            cstmt.setString(3, user.getPassword());
+
+            cstmt.execute();
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
 }

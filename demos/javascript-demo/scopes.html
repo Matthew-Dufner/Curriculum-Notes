@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        (function func() {
+            blockVar = "test";
+            console.log("Hoisting blockVar: ", blockVar);
+            //console.log("Hoisting blockLet: ", blockLet);
+            {
+                //console.log("BlockLet does not get hoisted at all", blockLet);
+                //This is a block, with block scope
+                var blockVar = "blockVar";
+                let blockLet = "blockLet";
+                console.log("block scope: ", blockVar, blockLet);
+            }
+            //outside that block scope
+            console.log("outer scope: ", blockVar);
+
+            var outerVar = "outerVar";
+            let outerLet = "outerLet";
+
+
+            (function nestedFunc() {
+                console.log(outerVar, outerLet);
+                var functionVar = "functionVar";
+                var functionLet = "functionLet";
+            })();
+
+            // console.log("functionVar from outside it's function: ", functionVar);
+            // console.log("functionLet from outside it's function: ", functionLet);
+
+
+            if (true) {
+                var controlFlowVar = "controlFlowVar";
+                let controlFlowLet = "controlFlowLet";
+            }
+
+
+            console.log("controlFlowVar from outside it's scope: ", controlFlowVar);
+            console.log("controlFlowLet from outside it's scope: ", controlFlowLet);
+
+
+
+
+
+        })();
+    </script>
+</body>
+
+</html>

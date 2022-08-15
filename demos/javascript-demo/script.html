@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="test1()">test 1</button>
+    <button onclick="test2()">test 2</button>
+    <button onclick="test3()">test 3</button>
+
+
+
+    <!-- External script file imported from sec location, otherwise exactly like writing script in the tag 
+    You cannot write scripts within this tag-->
+    <script src="./script.js">
+        //Not that this will be undefined. We can't write scripts inside the tag used to import a script file:
+        function test1() {
+            console.log("test 1");
+        }
+    </script>
+
+    <!-- Internal script -->
+    <script>
+        function test2() {
+            console.log("test 2");
+        }
+    </script>
+</body>
+<script>
+    //it doesn't matter where we use the script tag, other than the HTML file is parsed from top to bottom.
+    function test3() {
+        let x = 1;
+        console.log("x: ", x++);
+        console.log("x: ", ++x);
+        console.log("test 3");
+    }
+</script>
+
+</html>

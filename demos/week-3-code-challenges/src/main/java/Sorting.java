@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main {
+public class Sorting {
     public static int rearrangeTheDigits(int n){
         int result = -404;
 
