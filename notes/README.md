@@ -54,7 +54,7 @@ Git, Linux, OOP, Intro to Java
  - [JS I - Types and Coercion](./javascript/js-types-coercion.md)
  - [JS II - Scopes, Events, Errors](./javascript/more-javascript.md)
  - [JS III - Arrays, Classes, Hoisting](./javascript/javascript-fundamentals.md)
- - [Advanced Java Syntax](./javascript/js-advanced-syntax.md)
+ - [Advanced Javascript Syntax](./javascript/js-advanced-syntax.md)
  - [ES6 Features](./javascript/javascript-es6.md)
  - [ES6 Classes](./javascript/javascript-classes.md)
  - [AJAX & Fetch (Consuming APIs)](./javascript/ajax-fetch.md)
