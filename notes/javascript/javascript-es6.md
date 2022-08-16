@@ -124,7 +124,7 @@ Promises are used to handle asynchronous operations in JavaScript.
 
 The constructor syntax for a promise object is:
 ```
-let promise = new Promise(function(resolve, reject) {
+let promise = new Promise(function(resolve, reject) => {
   // executor (the producing code, "singer")
 });
 ```
