@@ -266,9 +266,9 @@ The `replaceChild()` method is used to remove an element from the DOM tree and i
 **Example:**
 ```html
 <body>
-<div id='div'>
-	This is a div element.
 <div>
+	This is a div element.
+</div>
 
 <script>
     // selecting the <div> element
