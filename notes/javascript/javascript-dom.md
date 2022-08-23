@@ -251,7 +251,7 @@ We can add, remove, replace, and copy any element into a DOM tree. DOM Manipulat
 
 ## Create Elements
 
-The `createElement()` method is used to create a new element and attach it to the DOM tree.
+The `createElement()` method is used to create a new element which can be attached to the DOM tree.
 
 **Example:**
 ```javascript
@@ -268,7 +268,7 @@ The `replaceChild()` method is used to remove an element from the DOM tree and i
 <body>
 <div>
 	This is a div element.
-<div>
+</div>
 
 <script>
     // selecting the <div> element
