@@ -12,6 +12,7 @@
  - [Collections](./collections-demo) - Maps, queues, lists, and out custom array list
  - [JDBC Demo](./jdbc-demo)
  - [Javascript Intro Demo](./javascript-demo)
+ - [Hibernate demo](./hibernate-demo)
 
 # Code Challenges
 ### Revature Asessments
