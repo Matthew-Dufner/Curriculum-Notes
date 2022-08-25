@@ -13,6 +13,7 @@
  - [JDBC Demo](./jdbc-demo)
  - [Javascript Intro Demo](./javascript-demo)
  - [Hibernate demo](./hibernate-demo)
+ - [Threads demo](./threads-demo)
 
 # Code Challenges
 ### Revature Asessments
