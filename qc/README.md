@@ -16,6 +16,7 @@ You can focus your study here, but these are not exhaustive lists of all possibl
  - [REST](./qc-rest.md)
  - [Servlets](./qc-servlets.md)
  - [Software Development Lifecycle](./qc-sdlc.md)
+ - [Hibernate](./qc-hibernate.md)
 
 ### Frontend:
  - [HTML](./qc-html.md)
