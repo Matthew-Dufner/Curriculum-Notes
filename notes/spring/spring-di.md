@@ -20,7 +20,7 @@ Dependency Injection can occur through the following methods:
 
 ### Constructor Injection Examples
 __XML Configuration__
-```
+```xml
 <beans>
     <bean id = "order" class = "com.revature.models.Order">
         <constructor-arg ref="account"/>
@@ -37,7 +37,7 @@ __XML Configuration__
 
 
 __Annotation Configuration__
-```
+```Java
 package com.revature.models;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -61,7 +61,7 @@ public class Order {
 
 
 __Java Configuration__
-```
+```Java
 package com.revature.config;
 
 // import statements
@@ -84,7 +84,7 @@ public class AppConfig {
 ### Setter Injection Examples
 __XML Configuration__
 NOTE: XML Configuration does not directly support setter injection, rather, it is accomplished through properties
-```
+```xml
 <beans>
 
     ...
@@ -106,7 +106,7 @@ NOTE: XML Configuration does not directly support setter injection, rather, it i
 
 
 __Annotation Configuration__
-```
+```java
 package com.revature.models;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -127,7 +127,7 @@ public class Order {
 
 
 __Java Configuration__
-```
+```java
 package com.revature.config;
 
 // import statements
