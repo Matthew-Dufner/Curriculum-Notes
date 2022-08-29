@@ -123,7 +123,7 @@ To use annotation configuration the context tag will be required within the Appl
 To properly configure beans, use of the `@Autowired` annotation should be used. This annotation injects beans based on their type, and it commonly used with singleton bean design patterns.
 
 `@Autowired` [Property]
-```java
+```Java
 package com.revature.models;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -146,7 +146,7 @@ public class Order {
 ```
 
 `@Autowired` [Setter]
-```
+```Java
 package com.revature.models;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -166,7 +166,7 @@ public class Order {
 ```
 
 `@Autowired` [Constructor]
-```
+```Java
 package com.revature.models;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -196,7 +196,7 @@ public class Order {
 If multiple bean definitions exist for a particular object type the `@Resource` or `@Qualifier` annotations can disambiguate the bean. `@Resource` is a standard Java annotation which injects beans based on name, rather than type. The `@Qualifier` annotation specifies a particular `@Autowired`-annotated bean based on the bean's identifier (the bean name). As such, the `@Qualifier` annotation is a Spring annotation:
 
 `@Resource`
-```
+```Java
 	@Resource("item_one") // if multiple items exist...
 	public void setItem(Item item) {
 		this.item = item;
@@ -204,7 +204,7 @@ If multiple bean definitions exist for a particular object type the `@Resource` 
 ```
 
 `@Qualifier`
-```
+```Java
 	@Autowired
 	public Order(@Qualifier("account")Account account, int id, Item item) {
 		super();
@@ -215,7 +215,7 @@ If multiple bean definitions exist for a particular object type the `@Resource` 
 ```
 
 `@Required`
-```
+```Java
 package com.revature.models;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -235,7 +235,7 @@ public class Order {
 ```
 
 Note that `<context-annotation-config>` only looks for annotations on beans within the same application context in which it is defined. This means if you put `<context:annotation-config/>` within a WebApplicationContext for a DispatcherServlet, it will only check for `@Autowired` beans within these controllers, but not beans in your services. You can otherwise specify packages using the `<context:component-scan/>` element with a list of packages:
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -270,7 +270,7 @@ ApplicationContext context = new ClassPathXmlApplicationContext(new String ("app
 Java also provides standard annotations which can be used to inject object dependencies. These annotations, `@Inject` and `@Named` require the use of the `javax.inject` package. Similarly to `@Autowired`, `@Inject` can occur at the class, field and constructor argument levels, based on the bean type. The `@Named` annotation can serve the same purpose as the `@Qualifier` annotation to disambiguate between bean definitions, and additionally be used as a bean definition equivalent to the `@Component` annotation.
 
 `@Inject`
-```
+```Java
 package com.revature.models;
 
 import javax.inject.Inject;
@@ -290,7 +290,7 @@ public class Order {
 ```
 
 `@Named`
-```
+```Java
 package com.revature.models;
 
 import javax.inject.Inject;
@@ -321,7 +321,7 @@ Java-based configuration also uses annotations, but do not require the use of an
 Note that you can use `@Bean`-annotated methods with any class which is `@Component`-annotated; however, they are most commonly used with `@Configuration` beans since the primary purpose for a class which is `@Configuration`-annotated is the definition of beans. In order to autowire or inject primitives, the `@ComponentScan` annotation specifies where to search for defined beans. Additionally all of these beans must be imported from the org.springframework.context.annotation package.
 
 The following example shows an illustration of the Java Configuration method:
-```
+```Java
 package com.revature.config;
 
 import org.springframework.context.annotation.Bean;
