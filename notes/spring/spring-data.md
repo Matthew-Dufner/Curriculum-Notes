@@ -132,7 +132,7 @@ Lets examine an example. First create a Spring project with the following depend
 * H2 Database
 
 If you choose to use Maven, the `pom.xml` file should look similar to this:
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -188,7 +188,7 @@ If you choose to use Maven, the `pom.xml` file should look similar to this:
 ```
 
 If you choose to use Gradle, the `build.gradle` file should look similar to this:
-```
+```gradle
 plugins {
     id 'org.springframework.boot' version '2.1.6.RELEASE'
     id 'io.spring.dependency-management' version '1.0.8.RELEASE'
@@ -216,7 +216,7 @@ test {
 ```
 
 Next, we must define a simple entity as a standard Bean. In this example, we will have a _Customer_ object associated with a _Customer_ table.
-```
+```Java
 package com.revature.models;
 
 import javax.persistence.Entity;
@@ -278,7 +278,7 @@ public class Customer {
 Note that we have two constructors, the default no-args constructor exists for the sake of the JPA, and as such we will not use it directly. Instead, we will utilize the parameterized constructor to create instances of _Customer_ objects to be saved to the database.
 
 Next, we create our repository interface:
-```
+```Java
 package com.revature.repository;
 
 import java.util.List;
@@ -299,7 +299,7 @@ public interface CustomerRepository extends JpaRepository<Customer, Integer> {
 ```
 
 Next, lets create a simple controller which we will use to interface with our application
-```
+```Java
 package com.revature.controllers;
 
 import java.util.List;
@@ -359,7 +359,7 @@ server.servlet.context-path=/customer
 ```
 
 Finally, create the application class:
-```
+```Java
 package com.revature;
 
 import org.springframework.boot.SpringApplication;
