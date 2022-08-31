@@ -171,7 +171,7 @@ When a specific view is not returned, the logical name used is based on the valu
 ### `@RequestParam`
 Alternatively the `@RequestParam` annotation should be used to bind request parameters to specific values in the mapped method's signature. You may specify values when using `@RequestParam` either using the name attribute, or simply with the name (or value) of the parameter.
 REQUEST:
-```
+```xml
 <form action="loginExample" method="POST">
 	<input type="text" name="username" value="Revature">
 	<input type="password" name="password" value="password">
@@ -180,7 +180,7 @@ REQUEST:
 ```
 
 CONTROLLER:
-```
+```java
 @Controller("examplePost")
 public class ExampleController {
 
@@ -188,7 +188,7 @@ public class ExampleController {
 
 	@RequestMapping(value="/loginExample", method=RequestMethod.POST)
 	@ResponseStatus(value = HttpStatus.OK)
-	public void postData(@RequestParam(name="username") String username, @RequestParam("password") String password) {
+	public void postData(@RequestParam(name="username") String username, @RequestParam(name="password") String password) {
 		System.out.println("Login values [username]: " + username + ", [password]: " + password);
 	}
 }
