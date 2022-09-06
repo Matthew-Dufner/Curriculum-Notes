@@ -7,7 +7,7 @@ With regard to Spring Beans, there are six scopes, four of which can only be by 
 1. Prototype Scope - A single bean definition is scoped to a number of object instances.
 1. Request Scope [Only valid with a web-aware ApplicationContext] - A single bean definition is scoped to the lifecycle of a single HTTP request. This means the HTTP request has its own instance of a bean created from a single bean definition.
 1. Session Scope [Only valid with a web-aware ApplicationContext] - A single bean definition is scoped to the lifecycle of an HTTP Session.
-1. Gloabl Session Scope [Only valid with a web-aware ApplicationContext] - A single bean definition is scoped to the lifecycle of a global HTTP session. Generally only valid when used in a portlet context.
+1. Global Session Scope [Only valid with a web-aware ApplicationContext] - A single bean definition is scoped to the lifecycle of a global HTTP session. Generally only valid when used in a portlet context.
 1. Application Scope [Only valid with a web-aware ApplicationContext] - Scopes a single bean definition to the lifecycle of a ServletContext.
 
 ### [Singleton Scope](https://docs.spring.io/spring/docs/4.0.x/spring-framework-reference/html/beans.html#beans-factory-scopes-singleton)
